@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+  #Blog {
+    margin: 0 -1em;
+  }
+  #Blog .Blog__Item__Item3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Blog__Item__Item2 {
+    display: none;
+  }
+  .Blog__Item__Item3 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Blog__responsive.css.map */

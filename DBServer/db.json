@@ -1,0 +1,230 @@
+{
+    "products" :[
+        {
+            "id"             : "1",
+            "productName"    : "ZORO",
+            "price"          : 375,
+            "priceSale"      : 455,
+            "image"          : "mypham1.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new hot",
+            "sell"           : 24,
+            "rating"         : 5,
+            "count"          : 0
+        },
+        {
+            "id"             : "2",
+            "productName"    : "OHUI",
+            "price"          : 215,
+            "priceSale"      : 355,
+            "image"          : "mypham2.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new",
+            "sell"           : 5,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "3",
+            "productName"    : "HOME",
+            "price"          : 185,
+            "priceSale"      : 455,
+            "image"          : "mypham3.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "hot",
+            "sell"           : 1,
+            "rating"         : 5,
+            "count"          : 0
+        },
+        {
+            "id"             : "4",
+            "productName"    : "DEBORA",
+            "price"          : 325,
+            "priceSale"      : 555,
+            "image"          : "mypham4.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new special",
+            "sell"           : 14,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "5",
+            "productName"    : "SARVON",
+            "price"          : 395,
+            "priceSale"      : 455,
+            "image"          : "mypham5.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "hot",
+            "sell"           : 0,
+            "rating"         : 5,
+            "count"          : 0
+        },
+        {
+            "id"             : "6",
+            "productName"    : "TYFFANY",
+            "price"          : 355,
+            "priceSale"      : 455,
+            "image"          : "mypham6.png",
+            "description"    : "Mỹ phẩm châu Âu",
+            "productNameList": "Mỹ phẩm châu âu thương hiệu hàng đầu thế giới",
+            "descriptionList": "Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new",
+            "sell"           : 57,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "7",
+            "productName"    : "OHUFI",
+            "price"          : 135,
+            "priceSale"      : 465,
+            "image"          : "mypham7.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "hot",
+            "sell"           : 24,
+            "rating"         : 5,
+            "count"          : 0
+        },
+        {
+            "id"             : "8",
+            "productName"    : "DOVE",
+            "price"          : 155,
+            "priceSale"      : 245,
+            "image"          : "mypham8.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "hot",
+            "sell"           : 1,
+            "rating"         : 5,
+            "count"          : 0
+        },
+        {
+            "id"             : "9",
+            "productName"    : "SAKURA",
+            "price"          : 139,
+            "priceSale"      : 200,
+            "image"          : "mypham9.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new",
+            "sell"           : 3,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "10",
+            "productName"    : "HAIZ",
+            "price"          : 325,
+            "priceSale"      : 555,
+            "image"          : "mypham10.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "new",
+            "sell"           : 31,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "11",
+            "productName"    : "SANJI",
+            "price"          : 969,
+            "priceSale"      : 999,
+            "image"          : "mypham11.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "special",
+            "sell"           : 0,
+            "rating"         : 4,
+            "count"          : 0
+        },
+        {
+            "id"             : "12",
+            "productName"    : "LUFFY",
+            "price"          : 955,
+            "priceSale"      : 1043,
+            "image"          : "mypham12.png",
+            "description"    : "Mỹ phẩm châu Á",
+            "productNameList": "Mỹ phẩm châu Á thương hiệu hạng nhì thế kỉ",
+            "descriptionList": "Dài quá nên viết đại cho vui đó mà. Khi mà nhà cung cấp cho thấy cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà",
+            "type"           : "special",
+            "sell"           : 62,
+            "rating"         : 4,
+            "count"          : 0
+            }
+    ],
+    "users"   : [
+        {
+            "id"             : "1",
+            "email"          : "khoi@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Josue",
+            "lastname"       : "Legros",
+            "role"           : 1
+        },
+        {
+            "id"             : "2",
+            "email"          : "khoi2@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Carrie",
+            "lastname"       : "Rosenbaum",
+            "role"           : 2
+        },
+        {
+            "id"             : "3",
+            "email"          : "khoi3@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Arnulfo",
+            "lastname"       : "Watsica",
+            "role"           : 2
+        },
+        {
+            "id"             : "4",
+            "email"          : "khoi4@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Travon",
+            "lastname"       : "Ritchie",
+            "role"           : 2
+        },
+        {
+            "id"             : "5",
+            "email"          : "khoi5@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Dolores",
+            "lastname"       : "Grimes",
+            "role"           : 2
+        },
+        {
+            "id"             : "6",
+            "email"          : "khoi6@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Rosendo",
+            "lastname"       : "Kuhn",
+            "role"           : 2
+        },
+        {
+            "id"             : "7",
+            "email"          : "khoi7@mail.com",
+            "password"       : "123456",
+            "firstname"      : "Kaitlin",
+            "lastname"       : "Gottlieb",
+            "role"           : 2
+        }
+    ]
+}

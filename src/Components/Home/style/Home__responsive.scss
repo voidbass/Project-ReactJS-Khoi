@@ -1,0 +1,145 @@
+/* Responsive */
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Tablet Width */
+@media screen and (max-width: 768px) {
+	.hoc{
+		width: 80%;
+	}
+	.Home__opensans3{
+	    margin: -3em 0 0 20.5em;	
+	}
+	.Home--banner__background {
+		max-width: 100%;
+	}
+	.Home__banner {
+		position: relative;
+		margin-left: 0;
+		max-width: 100%;
+		height: auto;
+	}
+	.info1, .info2, .info3, .info4, .info7, .info8, .info9, .info10{
+    width: 12em;
+    height: 12.5em;
+	}
+	.info5{
+    width: 24.3em;
+    height: 25.8em;
+	}
+	.info6 {
+	  width: 23.1em;
+    height: 25.8em;
+	}
+
+	.info7__fixsize, .info8__fixsize, .info9__fixsize, .info10__fixsize{
+	  padding: 0;
+	}
+	.Home__Bonuses{
+	}
+
+	.home__slide__ct2{
+		margin: 12% 0 0 14.5%;
+	}
+	%social__none--tablet{
+		display: none;
+	}
+	.PINTEREST, .LINKEDIN {
+		@extend %social__none--tablet;
+	}
+	.home__slide--3{
+		margin: 2em 0em 0 24em;
+	}
+	.modal-dialog{
+		max-width: 0;
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	#Home__Main{
+		overflow: hidden;
+	}
+	.hoc{
+		width: 100%;
+		padding: 0 1em;
+	}
+	.Home--banner__background{
+		max-width: 100%;
+	}
+
+	.Home__banner {
+		position: relative;
+	    margin-left: -8em;
+	    max-width: 250%;
+	    height: auto;
+	}
+	.Home__opensans3 {
+		position   : absolute;
+		font-weight: bold;
+		color      : black;
+		font-size  : 0.5em;
+		margin     : -2.5em 0 0 10.5em;
+	}
+
+
+	.Home__Bonuses{
+		border-top: 1px solid black;
+		border-left: 0; 
+	}
+	
+	.no--hoc{
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+	}
+	.item__height{
+		width: 50%;
+	}
+	.footer__licensebody{
+		display: block;
+	}
+
+	%social__none--mobi{
+		display: none;
+	}
+	
+	.PINTEREST, .LINKEDIN, .INSTAGRAM, .GOOGLE {
+		@extend %social__none--mobi;
+	}
+
+
+	.Item__list__Item{
+		display: block!important;
+	}
+
+	.item1 {
+		margin: 0 15%;
+	}
+	.home__slide--1 {
+		margin: 11em 1.5em;
+		position: absolute;
+		height: 7em;
+		width: auto;
+	}
+	.home__slide--2{
+		text-align: center;
+	}
+	.home__slide__ct2{
+		margin: 35% 0 0 46.9%;
+	}
+	.info10-4{
+		display: block;
+		text-align: left;
+		margin: 4em 0 0 8em;
+	}
+	.home__slide__ct1{
+	    margin: 0 0 0 6.3em;
+		text-align: left;
+	}
+	.home__slide--3{
+		margin: 4em 0em 0 -1em;
+		opacity: .3;
+	}
+}

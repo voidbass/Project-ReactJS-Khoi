@@ -1,0 +1,47 @@
+#Blog{
+	margin: 0em;
+	.Blog__font--min{
+		font-size: .5em;
+	}
+	.Blog__font__title{
+		font-size: .8em;
+	}
+	%Blog__item__img{
+		height: 10em;
+		max-width: 100%;
+	}
+
+	.Blog__item{
+		@extend %Blog__item__img;
+		content: "";
+		position: relative;
+		background-position: center;
+		background-size: cover;
+	}
+	@mixin Blog__color($color){
+	    color: $color;
+	    @content;
+	}
+
+	.Blog__item__color--gray{
+	    @include Blog__color(gray)
+	}
+	.Blog__img--clear1{
+		position: absolute;
+		width: 45%;
+		left: .9em;
+		top: 8.8em;
+		border-bottom: 20px solid white;
+		border-right: 20px solid transparent;
+	}
+	.Blog__img--clear2{
+		position: absolute;
+		left: 50%;
+		top: 8.8em;
+		right: 0;
+		border-bottom: 20px solid white;
+		border-left: 20px solid transparent;
+	}
+}
+
+@import 'Blog__responsive';

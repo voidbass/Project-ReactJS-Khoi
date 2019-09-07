@@ -1,0 +1,19 @@
+#About{
+	margin: 0 .1em;
+	.About__logo{
+		width: auto;
+		height: 13%;
+	}
+	.About__Img{
+		max-width: 100%; 
+	}
+	.About-Title__font--min{
+		font-size: 1.2em;
+	}
+	.About__font--min{
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+}
+
+@import 'About__responsive';

@@ -1,0 +1,36 @@
+.sidebar {
+	min-width: 255px;
+}
+.notification_admin {
+	cursor: pointer;
+	color: gray;
+	font-size: .9rem;
+	margin: 0 .6rem 0 .6rem;
+}
+
+.notification_admin i {
+	margin: 0 .6rem 0 .6rem;
+}
+
+.notification_admin i:hover {
+	color: white;
+}
+.wrap--admin {
+	min-height: 582px;
+	display: flex;
+	flex-direction: row;
+}
+.wrap--content {
+	width: 100%;
+	overflow: hidden;
+}
+.topspace-50{
+	margin-top: 10em;
+}
+.admin__img{
+	width: 5em;
+}
+.table-bordered{
+	border: none;
+	margin-bottom: 0;
+}

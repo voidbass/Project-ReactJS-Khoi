@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO",
+    "sources": [
+        "../Page404.scss"
+    ],
+    "names": [],
+    "file": "Page404.css"
+}

@@ -1,0 +1,130 @@
+#Product__Banner{
+	overflow: hidden;
+	background-color:#afb2b7;
+	height: 170px;
+	.gird-banner-ct1{
+		font-family: Lobster Regular;
+		font-size: 49px;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+	.gird-banner-ct2{
+		font-family: Roboto Light;
+		font-size: 20px;
+		padding-left: 15px;
+		line-height: 20px;
+		padding-top: 15px;
+	}
+	.bannergirl{
+		margin-top: -80px;
+		width: 90%;
+		opacity: 0.5;
+	}
+	.gird-list-banner{
+		background-position-x: 18em;
+		background-position-y: 0px;
+		background-size: 220%;
+		height: 245px;
+		text-align: center;
+		background-image: url(/lib/imgs/banner2.png);
+	}
+	.gird-item__icon{
+		padding-left: 20px; 
+	}
+
+	.gird__button{
+		border: none;
+		background-color: none;
+	}
+	.gird-item__image{
+		background-repeat: no-repeat;
+	    background-size: cover;
+	}
+}
+#products__menu__list{
+	.products__menu__list__ul{
+		list-style-type: disc; padding-left: 25px;
+	}
+}
+.item--height{
+	height: 225px;
+}
+.arrow-box {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 8px 0 8px;
+	padding: 0 7px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #aeaeae;
+	border-radius: 2px;
+	background-color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #555;
+	cursor: default;
+	}
+.arrow-box:before{
+	top          : 5px;
+	left         : -6px;
+	border-top   : 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-right : 6px solid #aeaeae;
+	content      : "";
+	position     : absolute;
+	display      : block;
+	height       : 0;
+	width        : 0;
+}
+.arrow-box:after{
+	top          : 6px;
+	left         : -5px;
+	border-top   : 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right : 5px solid #fff;
+	content      : "";
+	position     : absolute;
+	display      : block;
+	height       : 0;
+	width        : 0;
+}
+%btn-media{
+    float      : left;
+    height     : 24px;
+    line-height: 24px;
+    padding    : 0 7px;
+}
+.btnface{
+    background-color: #3b5998;
+    color           : white;
+    border          : none;
+    text-shadow     : 1px 1px 0 #1b2947;
+    @extend %btn-media;
+}
+
+.btntwitter{
+    @extend %btn-media;
+    color: #00acee;
+}
+.btngplus{
+    @extend %btn-media;
+    color: red;
+}
+.btnlinkedin{
+    @extend %btn-media;
+    background-color: #0077b5;
+    color:white;
+}
+.btnpinterest{
+    @extend %btn-media;
+    color: red;
+}
+.hr--dotted{
+	border-top: 1px dotted #c1c1c1;
+}
+	
+.color--white{
+	color: white;
+}

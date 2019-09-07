@@ -1,0 +1,46 @@
+#MenuNavBar{
+	position: fixed;
+	z-index: 1;
+	nav{
+		ul {
+			li {
+				a{
+					color: black;
+					font-weight: bold;
+					margin-top: 2em;
+				}
+			}
+		}
+	}
+	.logo{
+		height: 60%;
+	}
+	.dropdown{
+		.dropdown-cart:hover{
+			color: #789629;
+		}
+		.dropdown-cart{
+			cursor: pointer;
+		}
+	}
+	.dropdown-cart-table{
+		position: absolute;
+		width: 15em;
+		height: auto;
+		z-index: 1;
+		background-color: white;
+		border: 1px solid #789629;
+	}
+	.dropdown-cart-table2{
+		position: absolute;
+		width: 13em;
+		height: auto;
+		z-index: 1;
+		background-color: white;
+		border: 1px solid #789629;
+	}
+	.menu__image{
+		height: 4em;
+		max-width: 100%;
+	}
+}
