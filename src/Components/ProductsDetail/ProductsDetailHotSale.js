@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 
 class ProductsDetailHotSale extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 
 		this.state = {
@@ -13,7 +13,7 @@ class ProductsDetailHotSale extends Component {
 		this.onShowDetail = this.onShowDetail.bind(this)
 	}
 
-	onShowDetail(item){
+	onShowDetail(item) {
 		return event => {
 			let arrItemRecently = JSON.parse(localStorage.getItem('item-detail'));
 			if (!arrItemRecently) arrItemRecently = [];
@@ -26,36 +26,29 @@ class ProductsDetailHotSale extends Component {
 				arrItemRecently.push(item);
 				localStorage.setItem('item-detail', JSON.stringify(arrItemRecently));
 			}
-			
-			window.location.href = '/productsdetail?=';
 		}
 	}
 
 	render() {
-		let Item__list__item = this.props.getHomeData;
-		let Item__hot = Item__list__item.filter(item => item.type.includes("hot"))
-		let temp = [];
-		if (Item__hot.length > 0) {
-			for (var i = 0; i < 3; i++) {
-				temp.push(Item__hot[i]);	
-			}
-		}
+		const hotSale = this.props.getHomeData.data ? this.props.getHomeData.data.filter(item => item.type.includes("hot")) : []
 		return (
 			<>
 				<p className="font-weight-bold pl-0 m-0">SẢN PHẨM BÁN CHẠY</p>
 				<hr />
 				<div className="row">
 					{
-						temp.map((Item2, index) => <ProductsDetailHotSaleContent 	key={index}
-																					id={Item2.id}
-																					name={Item2.name}
-																					image={Item2.image}
-																					description={Item2.description}
-																					price={Item2.price}
-																					priceSale={Item2.priceSale}
-																					onShowDetail={this.onShowDetail(Item2)}
+						hotSale ?
+							hotSale.map((Item2) => <ProductsDetailHotSaleContent key={Item2.id}
+								id={Item2.id}
+								name={Item2.name}
+								image={Item2.image}
+								description={Item2.description}
+								price={Item2.price}
+								priceSale={Item2.priceSale}
+								onShowDetail={this.onShowDetail(Item2)}
 							/>
-						)
+							)
+							: null
 					}
 				</div>
 			</>
@@ -69,4 +62,4 @@ function mapStateToProps(state) {
 	}
 }
 
-export default connect(mapStateToProps,null)(ProductsDetailHotSale);
+export default connect(mapStateToProps, null)(ProductsDetailHotSale);

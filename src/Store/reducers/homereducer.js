@@ -1,12 +1,11 @@
-export default function homereducer(state = [], action) {
+export default function homereducer(initialState = [], action) {
 	switch (action.type) {
 		case 'HOME_OK':
-			state = [...action.data];
-			return state;
+			return { ...initialState, data: action.data }
+
 		case 'HOME_ERROR':
-			state = [...action.data];
-			return state;
+			return { ...initialState, data: action.data }
 		default:
-			return [...state];
+			return { ...initialState };
 	}
 }

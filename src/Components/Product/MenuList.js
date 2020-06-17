@@ -2,26 +2,34 @@ import React, { Component } from 'react';
 import ItemList from './ItemList';
 import { connect } from "react-redux";
 import { addItemSelected } from '../../Store/actions/ProductsAction';
+import { GET_HOMEDATA } from '../../Store/actions/HomeAction';
 
 class MenuList extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.onShowDetail = this.onShowDetail.bind(this)
 		this.onAddCart = this.onAddCart.bind(this)
+		this.state = {
+			temp: []
+		}
 	}
 
-	onShowDetail(item){
+	componentDidMount() {
+		GET_HOMEDATA()
+	}
+
+	onShowDetail(item) {
 		return event => {
 			let arrItemRecently = JSON.parse(localStorage.getItem('item-detail'));
-            if (!arrItemRecently) arrItemRecently = [];
+			if (!arrItemRecently) arrItemRecently = [];
 
-            if (arrItemRecently.length > 3) {
-                arrItemRecently.shift();
-            }
-            arrItemRecently.push(item);
+			if (arrItemRecently.length > 3) {
+				arrItemRecently.shift();
+			}
+			arrItemRecently.push(item);
 
-            localStorage.setItem('item-detail', JSON.stringify(arrItemRecently));
-            window.location.href = '/productsdetail?=';
+			localStorage.setItem('item-detail', JSON.stringify(arrItemRecently));
+			window.location.href = '/productsdetail?=';
 		}
 	}
 
@@ -32,14 +40,14 @@ class MenuList extends Component {
 
 			if (!countObject) {
 				countObject = [];
-				countObject.push({...item, count: 1})
+				countObject.push({ ...item, count: 1 })
 			}
 			else {
 				let idx = countObject.findIndex(obj => obj.id === item.id);
 				if (idx > -1)
 					countObject[idx].count += 1;
-				else	
-					countObject.push({...item, count: 1})
+				else
+					countObject.push({ ...item, count: 1 })
 			}
 
 			localStorage.setItem('id-item--cart', JSON.stringify(countObject));
@@ -48,17 +56,6 @@ class MenuList extends Component {
 	}
 
 	render() {
-		let Item__list__item = this.props.getHomeData;
-		let temp = [];
-
-		if (Item__list__item.length > 0) {
-			for (var item of Item__list__item) {
-				if (item){
-					temp.push(item);
-				}
-			}
-		}
-		
 		return (
 			<div className="container" id="products__menu__list">
 				<div className="p-0 row">
@@ -99,31 +96,33 @@ class MenuList extends Component {
 						<button className="btn btnsp left">Thời trang nữ</button>
 					</div>
 					<div className="col-lg-9 mt-3 pr-0 gird-item__icon">
-						<h6 className="float-left"> 
+						<h6 className="float-left">
 							<button className="d-inline btn btn-light" id="gird__grid"><i className="fa fa-th-large"></i> </button>
 							<button className="d-inline btn btn-light typeButton__deactive" id="gird__list"><i className="fa fa-th-list"></i></button>
 						</h6>
 						<h6 className="float-right">
 							<button className="d-inline btn btn-light" id="gird__btn-left"><i className="fa fa-caret-left"></i></button>
 							<button className="d-inline btn btn-light"><b> 1</b></button>
-							<button className="d-inline btn btn-light"> 2</button>
-							<button className="d-inline btn btn-light"> 3  </button>
+							<button className="d-inline btn btn-light" onClick={() => GET_HOMEDATA(2)}> 2</button>
+							<button className="d-inline btn btn-light" onClick={() => GET_HOMEDATA(3)}> 3  </button>
 							<button className="d-inline btn btn-light" id="gird__btn-right"><i className="fa fa-caret-right"></i></button>
 						</h6>
 						<ul className="product--grid--item col-lg-12 row list-unstyled">
-							{ 
-								temp.map((Item2, index) => <ItemList 	key={Item2.id}
-																		id={Item2.id}
-																		name={Item2.name}
-																		image={Item2.image}
-																		description={Item2.description}
-																		price={Item2.price}
-																		priceSale={Item2.priceSale}
-																		productName={Item2.productName}
-																		onShowDetail={this.onShowDetail(Item2)}
-																		onAddCart={this.onAddCart(Item2)}
+							{
+								this.props.getHomeData.data
+									? this.props.getHomeData.data.map((Item2, index) => <ItemList key={Item2.id}
+										id={Item2.id}
+										name={Item2.name}
+										image={Item2.image}
+										description={Item2.description}
+										price={Item2.price}
+										priceSale={Item2.priceSale}
+										productName={Item2.productName}
+										onShowDetail={this.onShowDetail(Item2)}
+										onAddCart={this.onAddCart(Item2)}
 									/>
-								)
+									)
+									: null
 							}
 						</ul>
 					</div>
@@ -142,11 +141,11 @@ const mapStateToProps = state => {
 }
 
 function mapDispatchToProps(dispatch) {
-    return {
+	return {
 		add: (item) => {
 			dispatch(addItemSelected(item));
 		}
-    };
+	};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MenuList); 

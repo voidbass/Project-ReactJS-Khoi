@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import ProductsDetailRecentViewContent from './ProductsDetailRecentViewContent';
 
 export default class ProductsDetailRecentView extends Component {
-	constructor(props){
+	constructor(props) {
 		super(props);
 		this.onShowDetail = this.onShowDetail.bind(this)
 	}
 
-	onShowDetail(item){
+	onShowDetail(item) {
 		return event => {
 			let arrItemRecently = JSON.parse(localStorage.getItem('item-detail'));
 			if (!arrItemRecently) arrItemRecently = [];
@@ -21,29 +21,27 @@ export default class ProductsDetailRecentView extends Component {
 				arrItemRecently.push(item);
 				localStorage.setItem('item-detail', JSON.stringify(arrItemRecently));
 			}
-
-			window.location.href = '/productsdetail?=';
 		}
 	}
 
 	render() {
 		let temp = JSON.parse(localStorage.getItem('item-detail'));
 		temp.reverse();
-        if (!temp) temp = [];
+		if (!temp) temp = [];
 		return (
 			<>
 				<p className="font-weight-bold pl-0 m-0">SẢN PHẨM MUA NHIỀU</p>
-				<hr/>
+				<hr />
 				{
-					temp.map((item,index) => 	<ProductsDetailRecentViewContent	key={index}
-																					id={item.id}
-																					name={item.name}
-																					image={item.image}
-																					description={item.description}
-																					price={item.price}
-																					priceSale={item.priceSale}
-																					onShowDetail={this.onShowDetail(item)}
-												/>
+					temp.map((item, index) => <ProductsDetailRecentViewContent key={index}
+						id={item.id}
+						name={item.name}
+						image={item.image}
+						description={item.description}
+						price={item.price}
+						priceSale={item.priceSale}
+						onShowDetail={this.onShowDetail(item)}
+					/>
 					)
 				}
 			</>

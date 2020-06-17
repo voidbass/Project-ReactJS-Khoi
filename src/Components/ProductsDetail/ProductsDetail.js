@@ -9,15 +9,17 @@ import ProductsSocial from './ProductsSocial';
 import Button from './Button';
 import Banner from './Banner';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { mapStateToProps, mapDispatchToProps } from '../../Store/actions/HomeStore';
 
 class ProductsDetail extends Component {
 	componentDidMount() {
 		this.props.getHomeData();
 	}
+
 	render() {
-		let temp = JSON.parse(localStorage.getItem('item-detail'));
-        if (temp) {
+		const temp = JSON.parse(localStorage.getItem('item-detail'));
+		if (temp) {
 			return (
 				<article className="container pt-5" id="productsdetail">
 					<div className="row pl-4 pt-5">
@@ -30,7 +32,7 @@ class ProductsDetail extends Component {
 							<li><img src="/lib/imgs/hop4.png" alt="hop4" /></li>
 							<li className="text-center"><img src="/lib/imgs/arrow-down.png" alt="arrows-down" /></li>
 						</ul>
-						<ProductsImage/>
+						<ProductsImage />
 						<aside className="col-lg-5">
 							<ProductsDescription />
 							<h5 className="font-weight-bold">Màu sắc</h5>
@@ -45,7 +47,7 @@ class ProductsDetail extends Component {
 							<div className="block">
 								<Button />
 							</div>
-							<p className="inline">Shipping & <a href="/" >Returns</a></p>
+							<p className="inline">Shipping & <Link to="/" >Returns</Link></p>
 							<ProductsSocial />
 						</aside>
 					</div>
@@ -59,8 +61,8 @@ class ProductsDetail extends Component {
 				</article>
 			);
 		} else {
-            window.location.href = "/";
-        }
+			window.location.href = "/";
+		}
 	}
 }
 

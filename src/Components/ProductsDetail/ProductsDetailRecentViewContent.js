@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 export default class ProductsDetailRecentViewContent extends Component {
 	render() {
@@ -12,9 +13,9 @@ export default class ProductsDetailRecentViewContent extends Component {
 		return (
 			<>
 				<div className="row">
-					<a onClick={onShowDetail} href={'/productsdetail?='+id} className="col-lg-4 p-0 text-center align-self-center">
-						<img className="products__detail__hotsale__image" src={"/lib/imgs/"+image} alt={image}/>
-					</a>
+					<Link onClick={onShowDetail} to={'/productsdetail?=' + id} className="col-lg-4 p-0 text-center align-self-center">
+						<img className="products__detail__hotsale__image" src={"/lib/imgs/" + image} alt={image} />
+					</Link>
 					<div className="col-lg-8 p-0 pt-2">
 						<p className="font-weight-bold">{description}</p>
 						<pre>
@@ -26,7 +27,7 @@ export default class ProductsDetailRecentViewContent extends Component {
 						</pre>
 						<p className="font-weight-bold">{price}.000đ</p>
 					</div>
-				<hr className="hr--dotted" />
+					<hr className="hr--dotted" />
 				</div>
 			</>
 		);
